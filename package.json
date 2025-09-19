@@ -16,8 +16,8 @@
     "shale"
   ],
   "type": "module",
-  "main": "./dist/shale-react.umd.cjs",
-  "module": "./dist/shale-react.js",
+  "main": "./dist/shale.umd.js",
+  "module": "./dist/shale.es.js",
   "types": "./dist/index.d.ts",
   "files": [
     "dist"

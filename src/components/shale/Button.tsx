@@ -2,7 +2,7 @@
 import React from 'react';
 import styled, { css } from 'styled-components';
 
-interface ButtonProps {
+interface ButtonProps extends React.ButtonHTMLAttributes<HTMLButtonElement> {
   variant?: 'primary' | 'secondary' | 'danger';
   children: React.ReactNode;
 }
@@ -41,8 +41,13 @@ const StyledButton = styled.button<ButtonProps>`
 const Button: React.FC<ButtonProps> = ({
   children,
   variant = 'primary',
+  ...props
 }) => {
-  return <StyledButton variant={variant}>{children}</StyledButton>;
+  return (
+    <StyledButton variant={variant} {...props}>
+      {children}
+    </StyledButton>
+  );
 };
 
 export default Button;

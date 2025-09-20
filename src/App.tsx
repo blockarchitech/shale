@@ -12,6 +12,8 @@ import {
   ItemContainerFooter,
   ButtonContainer,
   Paragraph,
+  ButtonRow,
+  SubItem,
 } from './components/shale';
 
 function App() {
@@ -42,6 +44,12 @@ function App() {
             Example Item
             <Toggle checked={toggle1} onChange={() => setToggle1(!toggle1)} />
           </Item>
+          {toggle1 && (
+            <SubItem>
+              Sub-item
+              <Toggle />
+            </SubItem>
+          )}
         </ItemContainerContent>
         <ItemContainerFooter>
           Comfort reached gay perhaps chamber his six detract besides add. Moonlight
@@ -98,9 +106,21 @@ function App() {
 
       <ItemContainer>
         <ButtonContainer>
-          <Button value="SEND" />
+          <Button>SEND</Button>
         </ButtonContainer>
       </ItemContainer>
+
+      <ItemContainer>
+        <ItemContainerHeader>Button Row</ItemContainerHeader>
+        <ItemContainerContent>
+          
+        </ItemContainerContent>
+      </ItemContainer>
+      <ButtonRow>
+            <Button variant="secondary">Cancel</Button>
+            <Button variant="danger">Delete</Button>
+            <Button>Save</Button>
+          </ButtonRow>
     </>
   );
 }

@@ -41,22 +41,6 @@ export const ItemContainerFooter = styled.div`
 `;
 
 /**
- * A generic item, often used within an `ItemContainer`.
- */
-export const Item = styled.label`
-  position: relative;
-  padding: 10px;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  overflow: hidden;
-
-  &:not(:first-child) {
-    border-top: 1px solid ${({ theme }) => theme.colors.mediumLightGray};
-  }
-`;
-
-/**
  * A container for centering a button.
  */
 export const ButtonContainer = styled.div`

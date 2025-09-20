@@ -2,6 +2,7 @@ export { default as Toggle } from './Toggle';
 export { default as Checkbox } from './Checkbox';
 export { default as Select } from './Select';
 export { default as DateInput } from './DateInput';
+export { default as Item } from './Item';
 export { ShaleTheme } from './ShaleTheme';
 export { theme } from './theme';
 export type { Theme } from './theme';

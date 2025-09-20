@@ -38,7 +38,7 @@ function App() {
       <ItemContainer>
         <ItemContainerHeader>Single Item</ItemContainerHeader>
         <ItemContainerContent>
-          <Item>
+          <Item description="This is a description for the item.">
             Example Item
             <Toggle checked={toggle1} onChange={() => setToggle1(!toggle1)} />
           </Item>
